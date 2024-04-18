@@ -1,0 +1,15 @@
+{
+  "name": "learningelectron",
+  "version": "1.0.0",
+  "description": "project for learning purposes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ft",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+</head>
+<body>
+<h1>Hello from Electron renderer!</h1>
+<p>👋</p>
+<p id="info"></p>
+<div>
+    <label>
+        Enter your Name!
+        <input id="name-text" type="text" style="width: 300px;">
+    </label>
+    <p id="hello-text">Press the button to be greeted!</p>
+    <button id="say-hello-btn">Say Hello!</button>
+</div>
+<button id="close-app">Close App</button>
+</body>
+<script src="./renderer.js"></script>
+</html>
