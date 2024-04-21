@@ -27,13 +27,17 @@ function quit() {
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'pong');
     ipcMain.handle('quit', () => quit());
-    createWindow()
+    ipcMain.handle('parse', (e, filepath) => parsePath(filepath));
+    createWindow();
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
     })
 })
 
-
+async function parsePath(filepath) {
+    console.log("parsing: " + filepath + "..." );
+    return path.parse(filepath).base;
+}
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()

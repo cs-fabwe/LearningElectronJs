@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="todo.css">
+    <meta charset="UTF-8">
+    <title>Todo</title>
+</head>
+<body>
+
+<div class="container">
+    <div style="margin-bottom: 15px;">
+        <button onclick="toggleAdd()">Add Todo</button>
+        <button onclick="clearTodos()">Clear List</button>
+    </div>
+    <div class="add-todo" id="add-todo" style="display: none;">
+        <label>Todo Name:
+            <input id="todo-text">
+            <button onclick="addTodo()">Add</button>
+        </label>
+    </div>
+    <p id="no-todos">Nothing to show here, consider adding new todos!</p>
+    <ul class="todo-list" id="todo-list">
+        <li class="todo-item">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        
+    </ul>
+   
+</div>
+
+
+<footer>
+    <script src="todo.js"></script>
+</footer>
+</body>
+</html>

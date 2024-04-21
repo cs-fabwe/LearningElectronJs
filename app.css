@@ -1,0 +1,9 @@
+#navigate {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    :hover {
+        box-shadow: 0 0 0 7px blue;
+    }    
+}

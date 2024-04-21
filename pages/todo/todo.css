@@ -1,0 +1,35 @@
+html, body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;    
+    height: 100%;
+}
+
+#add-todo {
+    display: none;
+}
+.add-todo {
+    display: none;
+}
+
+.todo-list {
+    width: 250px;
+    max-height: 500px;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    border: 2px black solid;
+}
+
+#no-todos {
+    display: none;
+}
